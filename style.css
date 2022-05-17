@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url("mer1.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 10vw;
+    color: red;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}

@@ -9,15 +9,100 @@ html,body{
 }
 
 body{
-    background-image: url("mer1.gif");
+    font-size: calc(0.4em + 1.3vmin);
+    display: flex;
+    flex-direction: column;
+    color:#0c084a;
+    background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#8cc1ac, #7bcaab);
+    background-color: #6cc19f;
+    background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+    background-repeat: repeat;
+    height: 200%;
+}
+
+header{
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif; 
+    background-image: url("plage.jpg");
+    background-position:center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;   
+    font-size: 2.8em;
+    padding:1vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 10vw;
-    color: red;
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    height: 22vh;
+}
+
+main{
+    font-size: 1.3em;
+    margin: 0 5%;
+}
+
+ul{
+    padding:.2em 0 .3em 1.143em
+}
+
+h1{
+    color: #feefc0;
+    mix-blend-mode:exclusion;
+}
+
+p{
+    white-space:pre-line;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    margin: 1% 0;
+}
+
+#characters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.character{
+    width: 40%;
+    margin:1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    margin-bottom: 1%;
+}
+
+.description{
+    text-align: center;
+}
+
+.text-center, .history{
+    text-align: center;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    height: auto;
+    width: 50%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.5% 1%;
+
 }

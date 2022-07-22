@@ -17,7 +17,12 @@ body{
     background-color: #6cc19f;
     background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
     background-repeat: repeat;
-    height: 200%;
+    min-height: 100%;
+}
+
+#body-login{
+    background: rgb(0, 11, 11);
+    cursor: none;
 }
 
 header{
@@ -105,4 +110,24 @@ footer{
     flex-direction: row-reverse;
     padding: 0.5% 1%;
 
+}
+
+#login{
+    position: absolute;
+    width: 140%;
+    height: 60%;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 6em;
+    color:green;
+    text-align: center;
+    cursor: none;
+}
+
+
+#login:focus{
+    outline:none;
 }

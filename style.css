@@ -112,6 +112,14 @@ footer{
 
 }
 
+#non-click{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
 #login{
     position: absolute;
     width: 140%;
@@ -130,4 +138,5 @@ footer{
 
 #login:focus{
     outline:none;
+    background: transparent;
 }

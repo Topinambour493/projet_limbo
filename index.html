@@ -7,8 +7,10 @@
     <title>Projet Limbo</title>
     <link rel="stylesheet" href="style.css" />
 </head>
-<body onmousedown="return false" id="body-login">
-    <input onmousedown="return false" onchange="verifyPassword" autofocus type="number" id="login"></input>
+<body id="body-login">
+    <input onkeyup="verifyPassword()" pattern="[0-9]{8}" autofocus type="number" id="login"></input>
+    <div onmousedown="return false"  id="non-click"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

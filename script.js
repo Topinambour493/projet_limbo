@@ -68,25 +68,25 @@ function verifyPassword() {
     for (let information of informations){
         if (information.password == password){
             document.getElementById("login").parentNode.removeChild(document.getElementById("login"))
-            body = document.body;
-            body.classList.remove("non-scroll");
-            body.scrollTop=0
-            fillWelcome(information)
+            setTimeout(function(){fillWelcome(information)},500)
         }
     }
 }
 
 function fillWelcome(information){
-    welcome=document.getElementById("welcome")
-    welcome.innerHTML="Félicitations "+information.firstname+" "+information.lastname+", vous êtes connecté !<br>"
-    welcome.innerHTML+="J'espère que la première partie proposé par mon acolyte Phillippe vous a plu. Je vous laisse découvrir le site magnifique et extraodinaire du projet limbo 😁!<br> Coco<br><br>"
-    welcome.innerHTML+="<button>Visiter</button>"
+    welcomeText=document.querySelector("#welcome > .text")
+    welcomeText.innerHTML="Félicitations "+information.firstname+" "+information.lastname+", vous êtes connecté !<br>"
+    welcomeText.innerHTML+="J'espère que la première partie proposé par mon acolyte Phillippe vous a plu.<br> Je vous laisse découvrir le site magnifique et extraodinaire du projet limbo 😁!<br> Coco<br><br>"
+    welcomeText.innerHTML+="<button>Visiter</button>"
 
-    document.querySelector("#welcome > button").addEventListener('click',closeWelcome)
+    document.querySelector("#welcome > .text > button").addEventListener('click',closeWelcome)
 }
 
 function closeWelcome(){
     document.getElementById("welcome").parentNode.removeChild(document.getElementById("welcome"))
+    body = document.body;
+    body.classList.remove("non-scroll");
+    body.scrollTop=0
 }
 
 function delay(n){

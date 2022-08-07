@@ -76,7 +76,7 @@ function verifyPassword() {
 function fillWelcome(information){
     welcomeText=document.querySelector("#welcome > .text")
     welcomeText.innerHTML="Félicitations "+information.firstname+" "+information.lastname+", vous êtes connecté !<br>"
-    welcomeText.innerHTML+="J'espère que la première partie proposé par mon acolyte Phillippe vous a plu.<br> Je vous laisse découvrir le site magnifique et extraodinaire du projet limbo 😁!<br> Coco<br><br>"
+    welcomeText.innerHTML+="J'espère que la première partie proposé par mon acolyte Philippe vous a plu.<br> Je vous laisse découvrir le site magnifique et extraodinaire du projet limbo 😁!<br> Coco<br><br>"
     welcomeText.innerHTML+="<button>Visiter</button>"
 
     document.querySelector("#welcome > .text > button").addEventListener('click',closeWelcome)

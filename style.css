@@ -119,11 +119,31 @@ img{
 }
 
 footer{
+    position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
     padding: 0.5% 1%;
-
 }
+
+.footerLeft{
+    display: block;
+    flex-direction: column;
+}
+
+.footerRight{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    align-content: flex-end;
+    bottom: 0;
+    right:0;
+    padding: 0.5% 1%;
+}
+
+.note2{
+    font-size: 0.8em;
+}
+
 
 .non-click{
     position: fixed;
@@ -180,6 +200,7 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 5%;
 }
 
 #welcome button {

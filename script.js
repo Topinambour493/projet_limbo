@@ -2,132 +2,136 @@ const informations=[
     {
         'firstname':'Sophie',
         'lastname':'Lagache',
-        'password':'736207'
+        'password':'736207',
+        "images":[
+            "images/Sophie1.png",
+            "images/Sophie2.png",
+            "images/Sophie3.png"
+        ]
     },
     {
         'firstname':'Philippe',
-        'lastname':'Pérrée',
-        'password':'618178'
+        'lastname':'Perrée',
+        'password':'618178',
+        "images":[
+            "images/Philippe1.png",
+            "images/Philippe2.png",
+            "images/Philippe3.png"
+        ]
     },
     {
         'firstname':'Corentin',
         'lastname':'Jezierski',
-        'password':'588081'
+        'password':'588081',
+        "images":[
+            "images/Corentin1.png",
+            "images/Corentin2.png",
+            "images/Corentin3.png"
+        ]
     },
     {
         'firstname':'Brice',
         'lastname':'Chevallier Kurt',
-        'password':'292335'
+        'password':'292335',
+        "images":[
+            "images/Brice1.png",
+            "images/Brice2.png",
+            "images/Brice3.png"
+        ]
     },
     {
         'firstname':'Milan',
         'lastname':'Hergott',
-        'password':'693693'
+        'password':'693693',
+        "images":[
+            "images/Milan1.png",
+            "images/Milan2.png",
+            "images/Milan3.png"
+        ]
     },
     {
         'firstname':'Lucas',
         'lastname':'Tarane',
-        'password':'450224'
+        'password':'450224',
+        "images":[
+            "images/Lucas1.png",
+            "images/Lucas2.png",
+            "images/Lucas3.png"
+        ]
     }
 ]
 
-var page_limbo=" \
-    <header> \
-        <h1>Projet Limbo</h1> \
-    </header> \
-    <main> \
-    <div class='container'> \
-        <div class='content history'> \
-            <h2 class='text-center'>L’histoire du projet</h2> \
-            <p> \
-                Tout a commencé autour du 17 mai 2022, lorsque l’idée d’un week-end à la mer entre amis. \
-                Cette idée est devenue un projet, le projet Limbo. \
-                Ce projet, c’est notre projet. \
-    \
-                <img src='macron.gif' alt='Macron, c\'est notre projet!!!'> \
-    \
-                Ce projet a failli devenir une semaine de vacances à Bélâbre dans une maison avec piscine, chez Mr H. \
-                Si seulement Mr H n\'était pas un fils de pute qui ne veut pas louer 5 jours mais qui laisse la possibilité sur Airbnb. \
-    \
-                Il y a eu des heures de recherches pour finalement tomber sur <b>la</b> pépite, une maison à Fort-Mahon-Plage. \
-    \
-            </p> \
-        </div> \
-    </div> \
-    <div class='container'> \
-        <div class='content'> \
-            <h2 class='text-center'>Déroulement</h2> \
-            <p> \
-                Le projet Limbo se déroulera du 27 au 31 août 2022, sur la commune de Fort-Mahon-Plage. \
-    \
-                De nombreuses activités sont au programme: \
-            </p> \
-            <ul> \
-                <li>baignade</li> \
-                <li>construction de châteaux de sable</li> \
-                <li>fabrication de douves à échelle humaine</li> \
-                <li>pétanque</li> \
-                <li>bronzage</li> \
-                <li>tennis</li> \
-                <li>vortex</li> \
-                <li>jeux de sociétés</li> \
-                <li>casino</li> \
-            </ul> \
-            <br> \
-        </div> \
-    </div> \
-    <div class='container'> \
-        <div class='content'> \
-            <h2 class='text-center'>Les participants de ce projet</h2> \
-            <div id='characters'> \
-                <div class='character'> \
-                    <div class='picture'><img src='test.png' alt='Philippe'></div> \
-                    <div class='name'>Philippe</div> \
-                    <div class='description'>Il est un des piliers de ce projet puisqu’il a fondé le google doc permettant notamment de déterminer <strong>la</strong> date à laquelle chacun est disponible. C\'est le produit le plus bas du rayon.</div> \
-                </div> \
-                <div class='character'> \
-                    <div class='picture'><img src='test.png' alt='Sophie'></div> \
-                    <div class='name'>Sophie</div> \
-                    <div class='description'>Elle a trouvé les logements, Bélâbre puis Fort-Mahon-Plage, c’est elle qui les a dénichés et qui s’est occupée de la transaction finale. C\'est la daronne (comme ta mère).</div> \
-                </div> \
-                <div class='character'> \
-                    <div class='picture'><img src='test.png' alt='Milan'></div> \
-                    <div class='name'>Milan</div> \
-                    <div class='description'>Proche collaborateur de Sophie, il l’a épaulé dans l’acte de location de Fort-Mahon-Plage. Il a néanmoins été un poids difficile à porter quand on lui a demandé une signature qu’il a effectuée tel un enfant de 5 ans ayant bu du rosé.</div> \
-                </div> \
-                <div class='character'> \
-                    <div class='picture'><img src='test.png' alt='Corentin'></div> \
-                    <div class='name'>Corentin</div> \
-                    <div class='description'>C’est l’homme qui est à l\'initiative du projet, il a proposé l’idée. Il est forcé de se déplacer en train, comme une certaine population pendant le XXème siècle.</div> \
-                </div> \
-                <div class='character'> \
-                    <div class='picture'><img src='test.png' alt='Lucas'></div> \
-                    <div class='name'>Lucas</div> \
-                    <div class='description'>Il a des renseignements sur les tortues et les dauphins.</div> \
-                </div> \
-                <div class='character'> \
-                    <div class='picture'><img src='test.png' alt='Brice'></div> \
-                    <div class='name'>Brice</div> \
-                    <div class='description'>Il participe.</div> \
-                </div> \
-            </div> \
-        </div> \
-    </div> \
-    </main> \
-    <footer> \
-    © Corentin Jezierski \
-    </footer> \
-"
+
 
 function verifyPassword() {
-    var password = document.getElementById('login').value;
+    var password = document.getElementById('input-login').value;
     for (let information of informations){
         if (information.password == password){
-            alert('vous êtes connecté'+' '+information.firstname+' '+information.lastname)
-            body = document.getElementById("body-login");
-            body.id="";
-            body.innerHTML = page_limbo;
+            document.getElementById("login").parentNode.removeChild(document.getElementById("login"))
+            body = document.body;
+            body.classList.remove("non-scroll");
+            body.scrollTop=0
+            fillWelcome(information)
         }
     }
 }
 
+function fillWelcome(information){
+    welcome=document.getElementById("welcome")
+    welcome.innerHTML="Félicitations "+information.firstname+" "+information.lastname+", vous êtes connecté !<br>"
+    welcome.innerHTML+="J'espère que la première partie proposé par mon acolyte Phillippe vous a plu. Je vous laisse découvrir le site magnifique et extraodinaire du projet limbo 😁!<br> Coco<br><br>"
+    welcome.innerHTML+="<button>Visiter</button>"
+
+    document.querySelector("#welcome > button").addEventListener('click',closeWelcome)
+}
+
+function closeWelcome(){
+    document.getElementById("welcome").parentNode.removeChild(document.getElementById("welcome"))
+}
+
+function delay(n){
+    return new Promise(function(resolve){
+        setTimeout(resolve,n);
+    });
+}
+
+async function upToTheTop(time){
+    if (document.documentElement.scrollTop){
+        while (document.documentElement.scrollTop > 0){
+            document.documentElement.scrollTop -=50;
+            await delay(time);
+        }
+    } else if (window.pageYOffset){
+        while (window.pageYOffset > 0){
+            window.pageYOffset -=50;
+            await delay(time);
+        } 
+    } else if (self.pageYOffset){
+        while (self.pageYOffset > 0){
+            self.pageYOffset -=50;
+            await delay(time);
+        } 
+    } else if (document.body.scrollTop){
+        while (document.body.scrollTop > 0){
+            document.body.scrollTop -=50;
+            await delay(time);
+        } 
+    }
+}
+
+function changeImage(e){
+    firstname = e.srcElement.alt
+    numberImage = (e.srcElement.src[e.srcElement.src.length - 5])
+    for (let information of informations){
+        if (information.firstname == firstname){
+            newNumberImage = information.images.length == numberImage ? 0 : parseInt(numberImage)
+            e.srcElement.src=information.images[newNumberImage]
+        }
+    }
+}
+
+document.querySelectorAll('.picture > img').forEach(item => {
+    item.addEventListener('click', e => {
+        changeImage(e)
+    })
+  })

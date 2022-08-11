@@ -215,3 +215,18 @@ footer{
 .hidden{
     display: none;
 }
+
+.centerFriends{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.textFriends{
+    position: absolute;
+    top:15%;
+    left: 50%;
+    color:aliceblue;
+    transform: translateX(-50%);
+}

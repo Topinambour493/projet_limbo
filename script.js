@@ -31,7 +31,7 @@ const informations=[
     },
     {
         'firstname':'Brice',
-        'lastname':'Chevallier Kurt',
+        'lastname':'Chevallier Curt',
         'password':'292335',
         "images":[
             "images/Brice1.png",
@@ -51,7 +51,7 @@ const informations=[
     },
     {
         'firstname':'Lucas',
-        'lastname':'Tarane',
+        'lastname':'Taranne',
         'password':'450224',
         "images":[
             "images/Lucas1.png",
@@ -75,7 +75,11 @@ function verifyPassword() {
 
 function fillWelcome(information){
     welcomeText=document.querySelector("#welcome > .text")
-    welcomeText.innerHTML="Félicitations "+information.firstname+" "+information.lastname+", vous êtes connecté !<br>"
+    if (information.firstname == "Sophie"){
+        welcomeText.innerHTML="Félicitations "+information.firstname+" "+information.lastname+", vous êtes connectée !<br>"
+    } else {
+        welcomeText.innerHTML="Félicitations "+information.firstname+" "+information.lastname+", vous êtes connecté !<br>"
+    }    
     welcomeText.innerHTML+="J'espère que la première partie proposé par mon acolyte Philippe vous a plu.<br> Je vous laisse découvrir le site magnifique et extraodinaire du projet limbo 😁!<br> Coco<br><br>"
     welcomeText.innerHTML+="<button>Visiter</button>"
 
